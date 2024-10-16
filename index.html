@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>语言教室</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+        }
+        header {
+            background-color: #00786c;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        nav {
+            text-align: center;
+            padding: 1rem;
+            background-color: #00786c;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #00786c;
+            color: white;
+        }
+        h2 {
+            color: #00786c;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        label, input, textarea {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        input[type="submit"] {
+            background-color: #00786c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 1rem;
+        }
+        input[type="submit"]:hover {
+            background-color: #005f56;
+        }
+        /* Dropdown menu for languages and culture */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            min-width: 160px;
+        }
+        .dropdown-content a {
+            color: #00786c;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>语言教室</h1>
+        <p>欢迎来到我们的语言教学平台，提供多语言和文化的学习资源。</p>
+    </header>
+
+    <nav>
+        <div class="dropdown">
+            <a href="#">言語</a>
+            <div class="dropdown-content">
+                <a href="xiandaihanyu.html">现代汉语</a>
+                <a href="gudaihanyu.html">古代汉语</a>
+                <a href="japanese.html">日语</a>
+                <a href="english.html">英语</a>
+                <a href="french.html">法语</a>
+                <a href="spanish.html">西班牙语</a>
+                <a href="sanskrit.html">梵语</a>
+                <a href="uyghur.html">维吾尔语</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">文化</a>
+            <div class="dropdown-content">
+                <a href="#">琴棋书画</a>
+                <a href="#">衣食住行</a>
+            </div>
+        </div>
+        <a href="#">質問</a>
+        <a href="#">おすすめ</a>
+    </nav>
+
+    <section id="courses">
+        <h2>课程内容</h2>
+        <p>我们提供以下语言和文化的教学课程：</p>
+        <ul>
+            <li><a href="xiandaihanyu.html" style="color:#00786c;">现代汉语</a></li>
+            <li><a href="gudaihanyu.html" style="color:#00786c;">古代汉语</a></li>
+            <li><a href="japanese.html" style="color:#00786c;">日语</a></li>
+            <li><a href="english.html" style="color:#00786c;">英语</a></li>
+            <li><a href="french.html" style="color:#00786c;">法语</a></li>
+            <li><a href="spanish.html" style="color:#00786c;">西班牙语</a></li>
+            <li><a href="sanskrit.html" style="color:#00786c;">梵语</a></li>
+            <li><a href="uyghur.html" style="color:#00786c;">维吾尔语</a></li>
+        </ul>
+    </section>
+
+    <section id="questions">
+        <h2>質問</h2>
+        <p>如果您有任何关于课程的问题，请填写以下表单：</p>
+        <form action="/submit_question" method="post">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">邮箱：</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="question">问题：</label>
+            <textarea id="question" name="question" rows="4" required></textarea>
+
+            <input type="submit" value="提交问题">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 语言教室 | 版权所有</p>
+    </footer>
+</body>
+</html>

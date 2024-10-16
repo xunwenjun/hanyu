@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>中文教学网站</title>
+    <title>语言教室</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@
             margin: 0;
         }
         header {
-            background-color: #007bff;
+            background-color: #00786c;
             color: white;
             text-align: center;
             padding: 2rem;
@@ -21,7 +21,7 @@
         nav {
             text-align: center;
             padding: 1rem;
-            background-color: #333;
+            background-color: #00786c;
         }
         nav a {
             margin: 0 1rem;
@@ -37,65 +37,53 @@
         footer {
             text-align: center;
             padding: 1rem;
-            background-color: #007bff;
+            background-color: #00786c;
             color: white;
         }
         h2 {
-            color: #007bff;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            max-width: 400px;
-            margin: auto;
-        }
-        label, input, textarea {
-            margin: 0.5rem 0;
-            padding: 0.5rem;
-            font-size: 1rem;
-        }
-        input[type="submit"] {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-            padding: 1rem;
-        }
-        input[type="submit"]:hover {
-            background-color: #0056b3;
+            color: #00786c;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>中文教学网站</h1>
-        <p>欢迎来到我们的中文教学平台，这里提供丰富的中文课程资源。</p>
+        <h1>语言教室</h1>
+        <p>欢迎来到我们的语言教室平台，这里提供丰富的语言与文化课程资源。</p>
     </header>
 
     <nav>
-        <a href="#courses">课程内容</a>
-        <a href="#about">关于我们</a>
-        <a href="#questions">提问</a>
+        <a href="#languages">言語</a>
+        <a href="#culture">文化</a>
+        <a href="#questions">質問</a>
+        <a href="#recommendations">おすすめ</a>
     </nav>
 
-    <section id="courses">
-        <h2>课程内容</h2>
-        <p>我们提供以下中文教学课程：</p>
+    <section id="languages">
+        <h2>言語</h2>
+        <p>选择您感兴趣的语言课程：</p>
         <ul>
-            <li>拼音课程</li>
-            <li>基础词汇课程</li>
-            <li>语法课程</li>
-            <li>中文文化课程</li>
+            <li><a href="xiandaihan.html">现代汉语</a></li>
+            <li><a href="gudaihan.html">古代汉语</a></li>
+            <li><a href="japanese.html">日语</a></li>
+            <li><a href="english.html">英语</a></li>
+            <li><a href="french.html">法语</a></li>
+            <li><a href="spanish.html">西班牙语</a></li>
+            <li><a href="sanskrit.html">梵语</a></li>
+            <li><a href="uyghur.html">维吾尔语</a></li>
         </ul>
     </section>
 
-    <section id="about">
-        <h2>关于我们</h2>
-        <p>我们是一支专业的中文教学团队，致力于为全球学生提供高质量的中文教育资源。</p>
+    <section id="culture">
+        <h2>文化</h2>
+        <p>探索与文化相关的内容：</p>
+        <ul>
+            <li><a href="music.html">琴棋书画</a></li>
+            <li><a href="lifestyle.html">衣食住行</a></li>
+        </ul>
     </section>
 
     <section id="questions">
-        <h2>提问</h2>
+        <h2>質問</h2>
         <p>如果您有任何关于课程的问题，请填写以下表单：</p>
         <form action="/submit_question" method="post">
             <label for="name">姓名：</label>
@@ -111,8 +99,13 @@
         </form>
     </section>
 
+    <section id="recommendations">
+        <h2>おすすめ</h2>
+        <p>这里是我们推荐的资源。</p>
+    </section>
+
     <footer>
-        <p>© 2024 中文教学网站 | 版权所有</p>
+        <p>© 2024 语言教室 | 版权所有</p>
     </footer>
 </body>
 </html>
